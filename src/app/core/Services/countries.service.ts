@@ -11,4 +11,10 @@ export class CountriesService {
   getAllCountries() {
     return this.http.get(`${this.urls.api}/all`);
   }
+  searchCountries(name: string) {
+    return this.http.get(`${this.urls.api}/name/${name}`);
+  }
+  filterByRegion(region: string) {
+    return this.http.get(`${this.urls.api}/region/${region}`);
+  }
 }
