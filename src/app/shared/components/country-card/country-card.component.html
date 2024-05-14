@@ -1,1 +1,35 @@
-<p>country-card works!</p>
+<div
+  class="w-full md:w-[350px] bg-WhiteDarkModeTextLightModeElements rounded-md shadow-md mb-12"
+  [class.bg-WhiteDarkModeTextLightModeElements]="!isDarkMode"
+  [class.bg-Dark-Blue-Dark-Mode-Elements]="isDarkMode"
+>
+  <div class="">
+    <img class="rounded-t-md" src="../../../../assets/cooking.jpg" alt="" />
+  </div>
+  <div class="pl-12 py-8">
+    <h3
+      class="text-[25px] md:text-[30px] font-bold"
+      [class.text-WhiteDarkModeTextLightModeElements]="isDarkMode"
+    >
+      Germany
+    </h3>
+    <p
+      class="text-[17px] font-bold py-1"
+      [class.text-WhiteDarkModeTextLightModeElements]="isDarkMode"
+    >
+      Population: <span class="font-normal">81,770,900</span>
+    </p>
+    <p
+      class="text-[17px] font-bold py-1"
+      [class.text-WhiteDarkModeTextLightModeElements]="isDarkMode"
+    >
+      Region: <span class="font-normal">Europe</span>
+    </p>
+    <p
+      class="text-[17px] font-bold py-1"
+      [class.text-WhiteDarkModeTextLightModeElements]="isDarkMode"
+    >
+      Capital: <span class="font-normal">Berlin</span>
+    </p>
+  </div>
+</div>
