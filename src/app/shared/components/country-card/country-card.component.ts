@@ -9,4 +9,10 @@ import { Component, Input } from '@angular/core';
 })
 export class CountryCardComponent {
   @Input() isDarkMode: boolean = false;
+  @Input() data: any;
+  @Input() countryFlag: string = '';
+  @Input() countryName: string = '';
+  @Input() countryPopulation: string = '';
+  @Input() countryRegion: string = '';
+  @Input() countryCapital: string = '';
 }
